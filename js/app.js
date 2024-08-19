@@ -41,7 +41,7 @@
             console.log("items:", this.items);
             this.playButton = document.getElementById("startGameBtn");
             console.log("playButton:", this.playButton);
-            this.bonusBigImage = "img/bonus/bonus-big.png";
+            this.bonusBigImage = "img/bonus/bonus-big.webp";
             this.clickedOnce = false;
             this.shuffleCount = 10;
             this.shuffleDelay = 500;

@@ -517,7 +517,8 @@ body {
 .footer__left {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  gap: 4vmin
 }
 .footer__platform {
   display: flex;
@@ -1146,7 +1147,6 @@ body {
     flex-direction: column
   }
   .footer__left {
-    gap: 4vmin;
     flex-direction: column
   }
   .footer__right {
@@ -1180,6 +1180,9 @@ body {
   }
 }
 @media (max-width:480px) {
+  body {
+    background-attachment: fixed!important
+  }
   .footer__platform-item {
     opacity: .7;
     -webkit-filter: grayscale(1);
