@@ -462,6 +462,7 @@
                 }), 0);
             }
             showPopupStage(stage) {
+                this.hideAllPopups();
                 const popup = document.querySelector(`[data-popup-stage="${stage}"]`);
                 if (popup) {
                     document.documentElement.classList.add("popup-show");
@@ -474,9 +475,16 @@
                     }));
                 }
             }
+            hideAllPopups() {
+                const popups = document.querySelectorAll("[data-popup-stage]");
+                popups.forEach((popup => {
+                    popup.classList.remove("popup_show");
+                    document.documentElement.classList.remove("popup-show");
+                }));
+            }
             closePopup(popup) {
-                document.documentElement.classList.remove("popup-show");
                 popup.classList.remove("popup_show");
+                document.documentElement.classList.remove("popup-show");
             }
             addChooseItemClass() {
                 if (this.gameContainer) this.gameContainer.classList.add("choose-item");
@@ -503,11 +511,12 @@
             resetItemPositions() {
                 this.items.forEach(((item, index) => {
                     item.removeAttribute("style");
-                    item.setAttribute("data-index-item", index);
+                    item.classList.remove("item-active");
                 }));
             }
             updateTranslation() {
-                if (typeof translatePage === "function") translatePage();
+                const translate = window.deepl;
+                if (typeof translate === "function") translate();
             }
         }
         document.addEventListener("DOMContentLoaded", (() => {

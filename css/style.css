@@ -414,6 +414,9 @@ video {
 .block {
   display: block
 }
+.inline {
+  display: inline
+}
 .hidden {
   display: none
 }
@@ -524,8 +527,7 @@ body::after {
   left: 50%;
   -webkit-transform: translateX(-55%);
   transform: translateX(-55%);
-  top: -10%;
-  width: min(120vmin,100vmax)
+  top: -10%
 }
 .popup__shine {
   position: absolute;
@@ -552,7 +554,6 @@ body::after {
   transform: translateX(-50%);
   background-blend-mode: multiply;
   display: block;
-  width: min(100vmin,60vmax);
   height: 60vmin
 }
 .popup__ui .popup__shine img {
@@ -1179,6 +1180,12 @@ body::after {
   .popup__header h4 {
     font-size: min(3.4vmin,1.1vmax)
   }
+  .popup__sparks {
+    width: min(120vmin,100vmax)
+  }
+  .popup__ui .popup__shine {
+    width: min(100vmin,60vmax)
+  }
   .popup__ui .popup__shine img {
     width: 90vw;
     height: min(70vmin,80vmax)
@@ -1367,8 +1374,15 @@ body::after {
     max-width: 60vw;
     margin: 0 auto
   }
+  .popup__sparks {
+    width: 100vw
+  }
   .popup__ui .popup__shine {
     top: 12vw
+  }
+  .popup__ui .popup__shine {
+    width: min(80vmin,60vmax);
+    height: 50vmin
   }
   .popup__ui .popup__shine img {
     width: 100vw;
