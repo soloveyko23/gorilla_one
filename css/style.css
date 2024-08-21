@@ -1156,9 +1156,8 @@ body::after {
   letter-spacing: .5vmin;
   color: #151710;
   font-weight: 900;
-  font-size: min(3.45vmin,3.02vmax);
+  font-size: min(3.45vmin,2vmax);
   border-radius: min(1vmin,2vmax);
-  min-height: 11vmin;
   min-width: min(24vmin,14vmax);
   padding: 2vmin 6.5vmin;
   border: 2px solid #8eaa20;
@@ -1195,12 +1194,12 @@ body::after {
     height: min(70vmin,80vmax)
   }
   .footer__platform-item svg {
-    width: min(5vmin,10vmax);
-    height: min(4vmin,7vmax)
+    width: min(6vmin,10vmax);
+    height: min(5vmin,7vmax)
   }
   .footer__app-item svg {
-    width: min(10vmin,20vmax);
-    height: min(4vmin,7vmax)
+    width: min(1vmin,20vmax);
+    height: min(6vmin,7vmax)
   }
   .page__column {
     top: 0
@@ -1255,14 +1254,15 @@ body::after {
     width: min(45vmin,30vmax)
   }
   .button {
-    height: 11vmin;
-    max-height: 12.31vmin
+    height: min(7vw,11vmin)
   }
 }
 @media (min-width:1024px) {
   .container {
     max-width: 1024px
   }
+}
+@media (min-width:1024.98px) {
   .footer {
     position: absolute;
     bottom: 0;
@@ -1307,7 +1307,12 @@ body::after {
     max-width: 1536px
   }
 }
-@media (max-width:1024px) {
+@media (max-width:1440px) {
+  .footer__wrap {
+    flex-direction: column
+  }
+}
+@media (max-width:1024.98px) {
   .footer__wrap {
     gap: 4vmin
   }
@@ -1327,9 +1332,6 @@ body::after {
 @media (max-width:768px) {
   .wrapper>main {
     height: 100vh
-  }
-  .footer__wrap {
-    flex-direction: column
   }
   .footer__left {
     flex-direction: column
@@ -1485,9 +1487,12 @@ body::after {
     width: 24vmin
   }
   .button {
-    height: 11vmin;
+    height: min(11vmin,17vmax);
     max-height: 10vmax;
-    min-width: 30vmin
+    min-height: 14vmin;
+    min-width: 40vmin;
+    font-size: min(3.45vmin,6vmax);
+    border-radius: min(2vmin,3vmax)
   }
 }
 @media (max-width:768px)and (min-width:480px) {
@@ -1511,7 +1516,7 @@ body::after {
     min-height: 0
   }
 }
-@media (max-width:1440px)and (min-width:1024px) {
+@media (max-width:1440px)and (min-width:1024.98px) {
   .page__column img {
     width: 14.6484375vw
   }
@@ -1522,7 +1527,7 @@ body::after {
     width: 14.5833333333vw
   }
 }
-@media (max-width:1024px)and (min-width:768px) {
+@media (max-width:1024.98px)and (min-width:768px) {
   .page__column img {
     width: 19.53125vw
   }
