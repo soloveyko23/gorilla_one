@@ -1198,7 +1198,7 @@ body::after {
     height: min(5vmin,7vmax)
   }
   .footer__app-item svg {
-    width: min(1vmin,20vmax);
+    width: min(12vmin,20vmax);
     height: min(6vmin,7vmax)
   }
   .page__column {
