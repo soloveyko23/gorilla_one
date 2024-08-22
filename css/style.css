@@ -722,13 +722,13 @@ body::after {
   display: flex
 }
 .footer__image-item svg {
-  height: min(4vmin,7vmax)
+  height: min(6vmin,10vmax)
 }
 .footer__desc {
   font-family: HelveticaNeueLight;
-  font-size: min(1.1vmin,2vmax);
+  font-size: min(1.4vmin,1vmax);
   font-weight: 300;
-  line-height: 1.1vmin;
+  line-height: 1.5vmin;
   text-align: right;
   color: #e6e6e6
 }
@@ -1397,21 +1397,24 @@ body::after {
   .preloader__logo svg {
     width: 100%
   }
+  .footer {
+    padding: 2vmin 0
+  }
   .footer__platform-item {
     opacity: .7;
     -webkit-filter: grayscale(1);
     filter: grayscale(1)
   }
   .footer__platform-item svg {
-    width: min(12vmin,20vmax);
+    width: min(16.2vmin,20vmax);
     height: min(8vmin,14vmax)
   }
   .footer__app-item svg {
-    width: min(20vmin,30vmax);
-    height: min(8vmin,14vmax)
+    width: min(28vmin,30vmax);
+    height: min(10vmin,14vmax)
   }
   .footer__desc {
-    font-size: min(2.2vmin,2vmax)
+    font-size: min(2.8vmin,1.8vmax)
   }
   .page__heros-hero.hero-two {
     left: 0;
